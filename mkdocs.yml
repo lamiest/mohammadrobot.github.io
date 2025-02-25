@@ -10,6 +10,8 @@ extra:
       link: https://twitter.com/mohammad_robot
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/mohammad-robot/
+    - icon: fontawesome/brands/github
+      link: https://github.com/MohammadRobot
 
 theme:
   name: material
