@@ -16,25 +16,33 @@ craete an accont on : [https://www.theconstruct.ai](https://www.theconstruct.ai)
 
 Open the Rosjects: [https://app.theconstruct.ai/l/6400c71b](https://app.theconstruct.ai/l/68d8cb66/)
 
+```bash
+sudo apt update
+sudo apt upgrade
 
-    cd /ros2_ws/src
+```
+
 
 clone project
-
-    git clone https://github.com/MohammadRobot/vmxpi_ros2.git
+```bash
+cd /ros2_ws/src
+git clone https://github.com/MohammadRobot/vmxpi_ros2.git
+```
 
 build project 
-
-    cd ~/ros2_ws && colcon build --packages-select vmxpi_ros2 && source install/setup.bash
+```bash
+cd ~/ros2_ws && colcon build --packages-select vmxpi_ros2 && source install/setup.bash
+```
 
 To conrol the robot by Keyboard run the following command in the new termnial 
-
-    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=True --remap cmd_vel:=/diffbot_base_controller/cmd_vel
+```bash
+os2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=True --remap cmd_vel:=/diffbot_base_controller/cmd_vel
+```
 
 
 if not moving run the following command 
 
-bash```
+```bash
 sudo apt update
 sudo apt install ros-humble-teleop-twist-keyboard
 ```
