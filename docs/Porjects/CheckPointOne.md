@@ -5,7 +5,7 @@ This project is for ROS MasterClass from [theconstruct.ai](theconstruct.ai) and 
 
 ### Task 1   Build RB1 URDF Replica 
 
-![image](/docs/images/rb1.png)
+![image](../images/rb1.png)
 
 
 
@@ -24,7 +24,7 @@ This project is for ROS MasterClass from [theconstruct.ai](theconstruct.ai) and 
 compute the moments of inertia: 
 
 
-![image](/docs/images/momentsofinertia.png)
+![image](../images/momentsofinertia.png)
 [moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia)
 
 Robot base: m =25 h=0.3 r= 0.25
