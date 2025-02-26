@@ -16,11 +16,15 @@ craete an accont on : [https://www.theconstruct.ai](https://www.theconstruct.ai)
 
 Open the Rosjects: [https://app.theconstruct.ai/l/6400c71b](https://app.theconstruct.ai/l/68d8cb66/)
 
+
+update the system
 ```bash
 sudo apt update
 sudo apt upgrade
-
 ```
+
+
+install ROS2 Humble [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 
 clone project
