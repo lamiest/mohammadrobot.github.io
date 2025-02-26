@@ -37,6 +37,12 @@ build project
 cd ~/ros2_ws && colcon build --packages-select vmxpi_ros2 && source install/setup.bash
 ```
 
+To launch the simulation with Gazebo:
+
+```bash
+ros2 launch vmxpi_ros2 diffbot_gazebo_classic.launch.py gui:=true use_gazebo_classic:=true
+```
+
 To conrol the robot by Keyboard run the following command in the new termnial 
 ```bash
 os2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -p stamped:=True --remap cmd_vel:=/diffbot_base_controller/cmd_vel
