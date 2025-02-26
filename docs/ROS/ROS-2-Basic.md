@@ -23,13 +23,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
-
 install ROS2 Humble [https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 
 clone project
 ```bash
-cd /ros2_ws/src
+cd ~/ros2_ws/src
 git clone https://github.com/MohammadRobot/vmxpi_ros2.git
 ```
 
@@ -135,9 +134,7 @@ Copy the following code:
 
 using namespace std::chrono_literals;
 
-/* This example creates a subclass of Node and uses std::bind() to register a
- * member function as a callback from the timer. */
-
+/* This example creates a MohammadRobot
 class SimplePublisher : public rclcpp::Node
 {
 public:
