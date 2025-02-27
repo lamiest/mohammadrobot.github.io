@@ -104,6 +104,7 @@ To create launch file
     
     cd ~/ros2_ws/src/topic_publisher_pkg
     mkdir launch
+    cd launch
     touch simple_topic_publisher.launch.py
     chmod +x simple_topic_publisher.launch.py
 
@@ -129,7 +130,7 @@ def generate_launch_description():
 Create a C++ file in the src directory of topic_publisher_pkg
 
     cd ~/ros2_ws/src/topic_publisher_pkg/src
-    touh simple_topic_publisher.cpp
+    touch simple_topic_publisher.cpp
 
 Copy the following code: 
 
