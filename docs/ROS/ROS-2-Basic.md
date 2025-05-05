@@ -73,41 +73,45 @@ Every package will have the following structure of files and folders:
 ### Create a Package 
 
 Go to ROS2 Workspace:
-
-    cd ~/ros2_ws/src
-
+```bash
+cd ~/ros2_ws/src
+```
 Create Package by runing this command:
-
-    ros2 pkg create topic_publisher_pkg --build-type ament_cmake --dependencies rclcpp std_msgs
+```bash
+ros2 pkg create topic_publisher_pkg --build-type ament_cmake --dependencies rclcpp std_msgs
+```
 
 To compile the package:
-
-    cd ~/ros2_ws/
-    colcon build
-
+```bash
+cd ~/ros2_ws/
+colcon build
+```
 Source setup.bash from the install folder so that ROS can find the packages in the workspace
-
-    source install/setup.bash
+```bash
+source install/setup.bash
+```
 
 To list ROS2 Packages 
-
-    ros2 pkg list
-
+```bash
+ros2 pkg list
+```
 
 ### Launch File
 
 To run ROS 2 program you can use launch file the by runing the following command: 
 
-    ros2 launch <package_name> <launch_file>
-
+```bash
+ros2 launch <package_name> <launch_file>
+```
 To create launch file 
-    
-    cd ~/ros2_ws/src/topic_publisher_pkg
-    mkdir launch
-    cd launch
-    touch simple_topic_publisher.launch.py
-    chmod +x simple_topic_publisher.launch.py
 
+```bash
+cd ~/ros2_ws/src/topic_publisher_pkg
+mkdir launch
+cd launch
+touch simple_topic_publisher.launch.py
+chmod +x simple_topic_publisher.launch.py
+```
 
 Sample code of launch file
 
@@ -128,9 +132,10 @@ def generate_launch_description():
 ### Source File (src)
 
 Create a C++ file in the src directory of topic_publisher_pkg
-
-    cd ~/ros2_ws/src/topic_publisher_pkg/src
-    touch simple_topic_publisher.cpp
+```bash
+cd ~/ros2_ws/src/topic_publisher_pkg/src
+touch simple_topic_publisher.cpp
+```
 
 Copy the following code: 
 
@@ -197,31 +202,30 @@ install(DIRECTORY
 )
 
 # ament_package()
- 
 ```
 
 ### Compiling the package 
 
 To compile the package run the following command:
-
-    cd ~/ros2_ws/
-    colcon build
-    source install/setup.bash
-
+```bash
+cd ~/ros2_ws/
+colcon build
+source install/setup.bash
+```
 
 
 ##  Visualize Data
 
 ### RVIZ 
 To open rviz run the following commmad 
-
-    rviz2
-
+```bash
+rviz2
+```
 ### rqt_graph 
 To open rqt_graph  run the following commmad 
-
-    rqt_graph 
-
+```bash
+rqt_graph 
+```
 
 
 
